@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+
+<body>
+	<script type="text/javascript">
+		/*console.log(Math.ceil(12.2))
+		console.log(Math.floor(12.9))
+		console.log(Math.round(12.5))
+		console.log(Math.random())
+		console.log(Math.sqrt(12.2))
+		console.log(Math.abs(12.2))*/
+		var list="abcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*",randompassword=[];
+		console.log(list.length)
+		console.log(list.charAt(11))
+		for(i=1;i<=6;i++){
+			var randomNumber=Math.floor(Math.random()*44)
+			console.log(randomNumber,list.charAt(randomNumber))
+			randompassword.push(list.charAt(randomNumber))
+		}
+		console.log("List from random password",randompassword)
+		var rjoin=randompassword.join('')
+		console.log(rjoin)
+	</script>
+</body>
+</html>
